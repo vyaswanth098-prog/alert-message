@@ -18,7 +18,7 @@ def per(current, previous):
         return None
     return ((current - previous) / previous) * 100
 
-for i in top_companies_symbols[1:10]:
+for i in top_companies_symbols:
     try:
         point = yf.Ticker(i)
         details = point.info
@@ -35,7 +35,7 @@ for i in top_companies_symbols[1:10]:
 message_text = ""
 
 for i, data in records.items():
-    if data["percentage"] is not None and data["percentage"] > 0:
+    if data["percentage"] is not None and data["percentage"] > 5:
         symbol = i.replace(".NS", "")
 
         company_row = top_companies_data[ top_companies_data["Symbol"] == symbol]["Company Name"]
