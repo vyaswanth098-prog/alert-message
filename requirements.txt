@@ -1,2 +1,4 @@
-twilio~=9.8.7
+twilio~=9.9.0
 python-dotenv~=1.2.1
+yfinance~=1.0
+pandas~=2.3.3
