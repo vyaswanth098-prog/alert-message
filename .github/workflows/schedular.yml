@@ -27,4 +27,4 @@ jobs:
           TWILIO_AUTH_TOKEN: ${{ secrets.TWILIO_AUTH_TOKEN }}
           TWILIO_NUMBER: ${{ secrets.TWILIO_NUMBER }}
           MY_NUMBER: ${{ secrets.MY_NUMBER }}
-        run: python main.py
+        run: python main_app.py
